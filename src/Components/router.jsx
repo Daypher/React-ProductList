@@ -18,4 +18,4 @@ const res = [
 
 export const route = import.meta.env.DEV
 	? createBrowserRouter(res)
-	: createHashRouter(res);
+	: createBrowserRouter(res);
