@@ -6,6 +6,7 @@ import Cart from "./Components/Cart";
 import Confirm from "./Components/Confirm";
 
 function App() {
+	console.log(import.meta.env);
 	const reduce = (prev, action) => {
 		switch (action.type) {
 			case "add": {
@@ -63,6 +64,7 @@ function App() {
 				/>
 			</div>
 			{mod ? <Confirm items={{ ds: dispatch, st: state }} /> : null}
+			<h1>PAGINA DE PRUEBA</h1>
 		</>
 	);
 }

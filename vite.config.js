@@ -4,5 +4,8 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
 	plugins: [react()],
-	base: "React-ProductList",
+	server: {
+		port: 1234,
+	},
+	base: process.env.NODE_ENV === "development" ? "/" : "/React-ProductList/",
 });
