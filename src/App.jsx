@@ -64,7 +64,7 @@ function App() {
 				/>
 			</div>
 			{mod ? <Confirm items={{ ds: dispatch, st: state }} /> : null}
-			<h1>PAGINA DE PRUEBA</h1>
+			<h1>PAGINA DE PRUEBA DESDE GH ACTIONS</h1>
 		</>
 	);
 }
