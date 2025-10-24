@@ -1,5 +1,4 @@
 export default function Confirm({ items }) {
-	console.log(items.st[0].pic);
 	return (
 		<div
 			className="modal"

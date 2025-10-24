@@ -1,7 +1,7 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import App from "../App";
 
-export const route = createBrowserRouter([
+export const route = createHashRouter([
 	{
 		index: true,
 		element: <App />,
