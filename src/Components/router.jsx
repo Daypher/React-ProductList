@@ -3,11 +3,11 @@ import App from "../App";
 
 const res = [
 	{
-		path: "/",
+		index: true,
 		element: <App />,
 	},
 	{
-		path: "prueba",
+		path: "/prueba",
 		element: <App />,
 	},
 	{
@@ -16,6 +16,7 @@ const res = [
 	},
 ];
 
-export const route = import.meta.env.DEV
-	? createBrowserRouter(res)
-	: createBrowserRouter(res);
+export const route =
+	import.meta.env.VITE_ROUTER === "true"
+		? createBrowserRouter(res)
+		: createHashRouter(res);

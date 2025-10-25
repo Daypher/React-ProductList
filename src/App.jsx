@@ -6,6 +6,7 @@ import Cart from "./Components/Cart";
 import Confirm from "./Components/Confirm";
 
 function App() {
+	console.log(typeof import.meta.env.VITE_ROUTER);
 	console.log(import.meta.env);
 	const reduce = (prev, action) => {
 		switch (action.type) {
